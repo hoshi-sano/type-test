@@ -1,0 +1,17 @@
+module Type
+  module Test
+    VERSION: String
+
+    class Vector
+      @x: Integer
+      @y: Integer
+      attr_accessor x (): Integer
+      attr_accessor y (): Integer
+
+      def initialize: (Integer, Integer) -> void
+      def ==: (Vector) -> (TrueClass | FalseClass)
+      def +: (Vector) -> Vector
+      def xy: () -> String
+    end
+  end
+end
